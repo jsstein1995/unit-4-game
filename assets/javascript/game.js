@@ -1,7 +1,11 @@
 console.log("hello!");
 
 // Put links to our images in this image array.
-var images = ["assets/images/7ce4bd5486ac8d46b56b15a69eab0394.jpg", "assets/images/61Tbzr0ttSL._SY450_.jpg", "assets/images/download.jpg", "assets/images/ff52cf5abb542aec8bd0de5f47b52661.jpg"];
+var images = [
+"assets/images/7ce4bd5486ac8d46b56b15a69eab0394.jpg", 
+"assets/images/61Tbzr0ttSL._SY450_.jpg", 
+"assets/images/download.jpg", 
+"assets/images/ff52cf5abb542aec8bd0de5f47b52661.jpg"];
 
 var winCounter = 0;
 
@@ -48,6 +52,18 @@ $("#number-to-guess").text(computerPick);
         counter += crystalValue1;
 
         $("#user-score").text(counter);
+
+        if (counter === computerPick) {
+            alert("You win!");
+            console.log("you win");
+            winCounter++;
+        }
+    
+        else if (counter >= computerPick) {
+            alert("You lose!");
+            lossCounter++;
+            console.log("you lose!");
+        }
        
     })
 
@@ -56,6 +72,17 @@ $("#number-to-guess").text(computerPick);
         counter += crystalValue2;
 
         $("#user-score").text(counter);
+        if (counter === computerPick) {
+            alert("You win!");
+            console.log("you win");
+            winCounter++;
+        }
+    
+        else if (counter >= computerPick) {
+            alert("You lose!");
+            lossCounter++;
+            console.log("you lose!");
+        }
     })
 
     $("#button-3").on("click", function () {
@@ -63,6 +90,17 @@ $("#number-to-guess").text(computerPick);
         counter += crystalValue3;
 
         $("#user-score").text(counter);
+        if (counter === computerPick) {
+            alert("You win!");
+            console.log("you win");
+            winCounter++;
+        }
+    
+        else if (counter >= computerPick) {
+            alert("You lose!");
+            lossCounter++;
+            console.log("you lose!");
+        }
     })
 
     $("#button-4").on("click", function () {
@@ -70,29 +108,19 @@ $("#number-to-guess").text(computerPick);
         counter += crystalValue4;
 
         $("#user-score").text(counter);
+        if (counter === computerPick) {
+            alert("You win!");
+            console.log("you win");
+            winCounter++;
+        }
+    
+        else if (counter >= computerPick) {
+            alert("You lose!");
+            lossCounter++;
+            console.log("you lose!");
+        }
     })
 
-    if (counter === computerPick) {
-        alert("You win!");
-        console.log("you win");
-        winCounter++;
-    }
-
-    else if (counter >= computerPick) {
-        alert("You lose!");
-        lossCounter++;
-        console.log("you lose!");
-    }
-
-    if (counter === computerPick){
-        alert ("you won");
-        winCounter++;
-     }   
-
-     else if (counter >= computerPick) {
-         alert ("You lose!");
-         lossCounter++;
-     }
 }
 
 function roundComplete() {
