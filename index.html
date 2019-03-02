@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chrystal Collector</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class='jumbotron'>
+            <div class='container'>
+
+                <h1>Crystal Collector Game</h1>
+                <p><small>Evil Jerry picks a number at the start of the game.</small></p>
+                <p><small>There are four glorious crystals below. Click on a crystal to add a specific amount of
+                        points to your total score.</small></p>
+                <p><small>Each round the Crystals' values cange.</small></p>
+                <p><small>The value of each Crystal is hidden. Match Evil Jerry's number and you win the crystal key
+                        to the castle!</small></p>
+                <p><small>Go over and you lose! Good luck!</small></p>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-12">
+                  <div class="card mb-2">
+                    <h3 id= "start-1" class="card-header">Pick a crytal</h3>
+                    <div class="card-body text-center">
+                      <button id="button-1" class="btn btn-danger btn-choice" value= "random">
+                        <h1>1</h1>
+                      </button>
+                      <button id="button-2" class="btn btn-danger btn-choice" value="2">
+                        <h1>2</h1>
+                      </button>
+                      <button id="button-3" class="btn btn-danger btn-choice" value="3">
+                        <h1>3</h1>
+                      </button>
+                      <button id="button-4" class="btn btn-danger btn-choice" value="4">
+                        <h1>4</h1>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Evil Jerry's score: <span id="number-to-guess"></span></strong></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Losses -->
+            <div class="col-lg-2">
+                <div class="card card-default">
+                    <div class="card-body">
+                        <strong>Losses: </strong> <span id="loss-counter">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wins -->
+            <div class="col-lg-2">
+                <div class="card card-default">
+                    <div class="card-body">
+                        <strong>Wins: </strong> <span id="win-counter">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="row">
+            <!-- Users score. -->
+            <div class="col-lg-3">
+                <div class="card card-default">
+                    <div class="card-body">
+                        <strong>Your score is: </strong> <span id="user-score"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+        
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
